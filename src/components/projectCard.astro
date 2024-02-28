@@ -1,0 +1,19 @@
+---
+import { Picture } from "astro:assets";
+import heroImage from "assets/preview.png";
+---
+
+<div class="rounded space-y-3">
+  <Picture
+    src={heroImage}
+    alt="Astronaut in the air"
+    widths={[200, 400, 600]}
+    sizes="(max-width: 800px) 100vw, 620px"
+    loading="eager"
+    format="avif"
+  />
+  <h3 class="font-bold text-lg">Nome do projeto</h3>
+  <p class="text-slate-500 text-sm">
+    Um pouco do que já fiz durante a minha jornada
+  </p>
+</div>
